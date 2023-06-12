@@ -1,0 +1,114 @@
+body {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.logo-wrapper {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  .logo-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+}
+.logo-name {
+  color: rgb(0, 0, 128);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.logo-name span {
+  letter-spacing: 1.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-name {
+    font-size: 2rem;
+  }
+}
+
+.gradient-text {
+  /* font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  display: inline-block; */
+  background-image: linear-gradient(to right, rgb(0, 0, 128), rgb(255, 215, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-menu {
+  background: linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255));
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+  transition: all 0.7s;
+}
+
+.nav-centering {
+  padding: 10px 20px;
+}
+
+/* before min-width: 1250px */
+@media screen and (min-width: 992px) {
+  .nav-centering {
+    padding: 20px 180px;
+  }
+}
+
+.nav-centering-logo {
+  padding: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-centering-logo {
+    padding: 20px 180px;
+  }
+}
+.menu-item {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #b11226;
+  color: rgb(255, 255, 255);
+  color: rgb(128, 128, 0);
+  color: #000080;
+  color: #0b0b45;
+  transition: color 0.5s;
+}
+
+.menu-item:hover {
+  color: #5a5a5a;
+}
+
+.nav-active {
+  color: #808000;
+}
+
+.landing-row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.landing-right {
+  height: 75vh;
+  background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255)
+    ),
+    url(img/bcg-landing.jpg) no-repeat center center / cover;
+}
+
+#landing {
+  padding-top: 150px;
+  height: 70vh;
+  background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255)
+    ),
+    url(img/bcg-landing.jpg) no-repeat center center / cover;
+}
