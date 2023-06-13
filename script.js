@@ -20,7 +20,7 @@ const itemSlideFromDownObserver = new IntersectionObserver(
   revealItemSlideFromDown,
   {
     root: null,
-    threshold: 0.25,
+    threshold: 0.2,
   }
 );
 
