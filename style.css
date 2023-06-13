@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  background: yellow;
+  /* background: yellow; */
   overflow-x: hidden;
 }
 
@@ -315,4 +315,22 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/* #contact {
+  background: url(img/bcg-contact.png) no-repeat center center / cover;
+} */
+
+/* .contact-img-wrapper {
+  background: url(img/bcg-contact.png) no-repeat center center / cover;
+} */
+
+.contact-text-wrapper {
+  position: relative;
+}
+
+.contact-text {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
