@@ -403,8 +403,8 @@ footer .copyright {
   width: 100%;
   background: linear-gradient(
       to left,
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
     ),
     url(img/team2500px.png) no-repeat center center / cover;
 }
@@ -412,11 +412,44 @@ footer .copyright {
 .header-helper {
   margin-top: 75px;
   height: 400px;
+  color: #0b0b45;
   /* background-color: yellow; */
 }
 
 @media screen and (min-width: 768px) {
   .header-helper {
     margin-top: 125px;
+  }
+}
+
+.about-title-up {
+  letter-spacing: 1.25px;
+  animation-name: animAboutUsUp;
+  animation-duration: 1.5s;
+}
+@keyframes animAboutUsUp {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-title-down {
+  letter-spacing: 1px;
+  animation-name: animAboutUsDown;
+  animation-duration: 1.5s;
+}
+@keyframes animAboutUsDown {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
