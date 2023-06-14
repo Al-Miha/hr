@@ -364,3 +364,59 @@ footer .copyright {
 /* #footer {
   background: url(img/Group1.png) no-repeat center center / cover;
 } */
+
+/* ABOUT SECTION */
+
+#about-main {
+  padding-top: 150px;
+  background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(img/bcg-section-sales-points.jpg) no-repeat center center / cover;
+}
+
+@media screen and (min-width: 768px) {
+  .card2 {
+    border-left: 0.5px solid lightgray;
+    border-right: 0.5px solid lightgrey;
+  }
+}
+
+.underline-blue {
+  height: 1.25px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #012bd3 !important;
+  margin: 0;
+  /* margin-bottom: 40px; */
+  border: 0;
+}
+
+/* HEADING */
+#header {
+  /* padding-top: 125px; */
+  /* margin-top: 75px; */
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(img/team2500px.png) no-repeat center center / cover;
+}
+
+.header-helper {
+  margin-top: 75px;
+  height: 400px;
+  /* background-color: yellow; */
+}
+
+@media screen and (min-width: 768px) {
+  .header-helper {
+    margin-top: 125px;
+  }
+}
