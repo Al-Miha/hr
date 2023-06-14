@@ -325,6 +325,12 @@ body {
   background: url(img/bcg-contact.png) no-repeat center center / cover;
 } */
 
+/* CONTACTS SECTION */
+
+#contacts {
+  padding-top: 150px;
+}
+
 .contact-text-wrapper {
   position: relative;
 }
@@ -335,3 +341,26 @@ body {
   left: 45%;
   transform: translateX(-50%);
 }
+
+/* FOOTER */
+
+.footer-recruitment {
+  letter-spacing: 1.5px;
+}
+
+footer ul,
+footer .copyright {
+  font-weight: 300;
+}
+
+.link-unstyled,
+.link-unstyled:link,
+.link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+  background: transparent;
+}
+
+/* #footer {
+  background: url(img/Group1.png) no-repeat center center / cover;
+} */
