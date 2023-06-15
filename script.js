@@ -89,3 +89,29 @@ allItemsSlideFromRight.forEach(function (section) {
   itemSlideFromRightObserver.observe(section);
   section.classList.add("item-slide-from-right--hidden");
 });
+
+///////////////////////////////////////
+// Reveal Items Fade In Effect
+const allItemsFadeIn = document.querySelectorAll(".item-fade-in");
+
+const revealItemFadeIn = function (entries, observer) {
+  //console.log(entries);
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("item-fade-in--hidden");
+  // entry.target.classList.remove("section--hidden2");
+  observer.unobserve(entry.target);
+};
+
+const itemFadeInObserver = new IntersectionObserver(revealItemFadeIn, {
+  root: null,
+  threshold: 0.25,
+});
+
+allItemsFadeIn.forEach(function (section) {
+  itemFadeInObserver.observe(section);
+  section.classList.add("item-fade-in--hidden");
+});
