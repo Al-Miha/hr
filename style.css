@@ -47,7 +47,7 @@ body {
 
 .nav-menu {
   background: linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255));
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05); */
   transition: all 0.7s;
 }
 
@@ -111,15 +111,23 @@ body {
   margin-top: 75px;
   /* padding-top: 250px; */
   /* height: 70vh; */
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255)),
+  background: linear-gradient(
+      rgba(255, 255, 255),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255)
+    ),
     url(img/bcg-landing.jpg) no-repeat center center / cover;
 }
 
 .col-helper-left {
-  padding: 50px 0;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 #landing blockquote {
   color: #000080;
+  /* color: #fff; */
   font-size: 24px;
   line-height: 1.25;
   font-style: italic;
