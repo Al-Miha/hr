@@ -156,6 +156,8 @@ body {
 
 .main-img-wrapper {
   position: relative;
+  animation-name: animFromRight;
+  animation-duration: 1.5s;
 }
 .design-element {
   width: 25%;
@@ -170,6 +172,32 @@ body {
   position: absolute;
   right: 10%;
   z-index: 2; */
+}
+
+.quote-wrapper {
+  animation-name: animFromLeft;
+  animation-duration: 1.5s;
+}
+@keyframes animFromLeft {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animFromRight {
+  0% {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 #offer {
