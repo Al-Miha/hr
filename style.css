@@ -121,6 +121,12 @@ body {
     url(img/bcg-landing.jpg) no-repeat center center / cover;
 }
 
+@media screen and (min-width: 992px) {
+  #landing {
+    margin-top: 125px;
+  }
+}
+
 .col-helper-left {
   padding-top: 25px;
   padding-bottom: 40px;
