@@ -599,13 +599,13 @@ footer .copyright {
 
 /* REFERENCES */
 
-.blockquote {
-  height: 230px;
-}
-
-.blockquote {
+#references .blockquote {
   font-style: italic;
   font-weight: 300;
+}
+
+#references .carousel-item {
+  height: 400px;
 }
 
 .carousel-item h5 {
