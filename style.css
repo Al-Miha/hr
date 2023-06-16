@@ -597,16 +597,11 @@ footer .copyright {
 
 /* END OF CLIENTS PAGE */
 
-/* customers */
-.customers {
-  background: #151f20;
+/* REFERENCES */
+
+.blockquote {
+  height: 150px;
 }
-/* ol li::marker {
-  visibility: hidden !important;
-  opacity: 0 !important;
-  color: green;
-  display: none !important;
-} */
 
 .blockquote {
   font-style: italic;
@@ -637,4 +632,4 @@ footer .copyright {
     opacity: 0;
   }
 }
-/* end of customers */
+/* END OF REFERENCES */
