@@ -607,6 +607,15 @@ footer .copyright {
   color: green;
   display: none !important;
 } */
+
+.blockquote {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.carousel-item h5 {
+  color: #0b0b45;
+}
 @media screen and (min-width: 768px) {
   .car-btn-prev {
     left: -100px;
