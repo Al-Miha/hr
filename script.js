@@ -115,3 +115,93 @@ allItemsFadeIn.forEach(function (section) {
   itemFadeInObserver.observe(section);
   section.classList.add("item-fade-in--hidden");
 });
+
+///////////// DATA ///////////////////
+
+// const menuIcon = document.querySelector(".menu-icon");
+// const xBtn = document.querySelector(".x-btn");
+// const navigation = document.querySelector(".navigation");
+let start = false;
+
+// menuIcon.addEventListener("click", () => {
+//   navigation.classList.add("navigate");
+// });
+
+// xBtn.addEventListener("click", () => {
+//   navigation.classList.remove("navigate");
+// });
+
+window.addEventListener("scroll", () => {
+  // const about = document.querySelector(".about");
+  // const services = document.querySelector(".services");
+  // const portfolio = document.querySelector(".portfolio");
+  const data = document.querySelector(".data");
+  const nums = document.querySelectorAll(".num");
+
+  // if (window.pageYOffset >= 200) {
+  //   about.classList.add("change");
+  // } else {
+  //   about.classList.remove("change");
+  // }
+
+  // if (window.pageYOffset >= about.offsetTop + 200) {
+  //   services.classList.add("change");
+  // } else {
+  //   services.classList.remove("change");
+  // }
+
+  // if (window.pageYOffset >= services.offsetTop) {
+  //   portfolio.classList.add("change");
+  // } else {
+  //   portfolio.classList.remove("change");
+  // }
+
+  // elementOffset = $(".data").offset().top;
+  // console.log(elementOffset);
+  // console.log(data.offsetTop);
+  if (window.scrollY >= data.offsetTop - 300) {
+    if (!start) {
+      nums.forEach((num) => {
+        startCount(num);
+      });
+    }
+    start = true;
+  }
+});
+
+const startCount = (el) => {
+  el.textContent = 0;
+  let max = el.dataset.val;
+  let count = setInterval(() => {
+    el.textContent++;
+    if (el.textContent === max) {
+      clearInterval(count);
+    }
+  }, 5);
+};
+
+// // SCROLL-UP FUNCTION
+// const myButton = document.getElementById("myBtn");
+
+// // when user scroll down 100 px from the top of the document, show the button
+
+// window.onscroll = function () {
+//   scrollFunction();
+// };
+
+// function scrollFunction() {
+//   if (
+//     document.body.scrollTop > 100 ||
+//     document.documentElement.scrollTop > 100
+//   ) {
+//     console.log("scrolled");
+//     myButton.style.display = "block";
+//   } else {
+//     myButton.style.display = "none";
+//   }
+// }
+
+// myButton.addEventListener("click", () => {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// });
