@@ -684,7 +684,7 @@ footer .copyright {
 .data {
   width: 100%;
   height: 100%;
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 .data-header {
@@ -694,7 +694,6 @@ footer .copyright {
 .data-header h3 {
   font-size: 20px;
   text-transform: uppercase;
-  color: #777;
   letter-spacing: 3px;
   margin-bottom: 20px;
 }
@@ -705,6 +704,12 @@ footer .copyright {
   color: #fff;
   letter-spacing: 3px;
   margin-bottom: 12px;
+}
+
+.data-header h2 {
+  color: #777;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
 }
 
 .data-list {
