@@ -819,5 +819,10 @@ footer .copyright {
 #diversity {
   background: #0b0b45;
   color: #fff;
+  letter-spacing: 0.5px;
+}
+
+#diversity h2 {
+  font-size: 40px;
 }
 /* END OF DIVERSITY */
