@@ -159,7 +159,7 @@ window.addEventListener("scroll", () => {
   // elementOffset = $(".data").offset().top;
   // console.log(elementOffset);
   // console.log(data.offsetTop);
-  if (window.scrollY >= data.offsetTop - 200) {
+  if (window.scrollY >= data.offsetTop - 300) {
     if (!start) {
       nums.forEach((num) => {
         startCount(num);
